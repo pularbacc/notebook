@@ -1,0 +1,156 @@
+===============================================================================
+=[network]=
+===============================================================================
+
+  ___   _      ___   _      ___   _      ___   _      ___   _
+ [(_)] |=|    [(_)] |=|    [(_)] |=|    [(_)] |=|    [(_)] |=|
+  '-`  |_|     '-`  |_|     '-`  |_|     '-`  |_|     '-`  |_|
+ /mmm/  /     /mmm/  /     /mmm/  /     /mmm/  /     /mmm/  /
+       |____________|____________|____________|____________|
+                             |            |            |
+                         ___  \_      ___  \_      ___  \_
+                        [(_)] |=|    [(_)] |=|    [(_)] |=|
+                         '-`  |_|     '-`  |_|     '-`  |_|
+                        /mmm/        /mmm/        /mmm/
+
+
+_______________________________________________________________________________
+# note
+    - modern
+    - firewall
+    - router
+    - switch
+
+    - WAP (Wireless Access Point) : all in one 
+
+_______________________________________________________________________________
+# network glossary
+    - Network Layers
+    - Interfaces
+    - Protocols
+    - Medium Access Control
+    - IP
+    - ICMP
+    - TCP
+    - UDP
+    - HTTP
+    - FTP
+    - DNS
+    - SSH
+    - ISP : Internet Servervice Provider
+
+
+_______________________________________________________________________________
+# cookies
+    + Name
+    + value
+    + Domain
+    + Path
+    + Expires/Max-Age
+    + Size
+    + HttpOnly
+    + Secure
+    
+- Server set cookie
+    HTTP/2.0 200 OK
+    Content-Type: text/html
+    Set-Cookie: yummy_cookie=choco
+    Set-Cookie: tasty_cookie=strawberry
+
+- Server get cookie
+    GET /sample_page.html HTTP/2.0
+    Host: www.example.org
+    Cookie: yummy_cookie=choco; tasty_cookie=strawberry
+
+- lifetime cookie
+- where cookie are sent
+
+_______________________________________________________________________________
+# School note
+
+- Standard
+
+- Network basic : 
+    + components
+    + model
+    + characteristics
+
+- Network type 
+  
+- Network structure 
+    + Network Edge 
+    + Core Network (Router - Router)
+        + Forward
+        + Routing
+    + Access Network
+    -> Network Edge connect Core Network by Access Network
+
+- Topology
+
+- Perfomance  
+    + Delay
+    + Bandwidth
+    + Throughput
+- Physics media -> Device 
+
+- Switch 
+- Router 
+    + Connector
+    + Network Interface Card
+
+- Operation models : 
+    + Client - Server
+    + Peer to Peer  
+        + Torrent
+
+
+
+- VPN 
+- ISP (Internet service provider)
+- SSH 
+- TFTP
+
+- Protocol 
+
+- LAN -> MAN -> WAN -> internet
+    + Internet = internet + ISP 
+
+- DNS (Domain Name System)
+    + Return IP from domain name
+    + unencrypted
+    + Local DNS server
+    + DNS server 
+    
+    
+    Step:
+    - user -> what is ip of su-co-dev.com
+    - dns server -> su-co-dev.com is 157.230.39.211
+    - user -> ok go to 157.230.39.211
+
+
+- DoH (dns over https)
+
+- Subnet
+
+- DHCP
+
+- protocols transfer TCP or UDP
+    + TCP
+        -> Slow , Care lost package 
+    + UDP
+        -> Fast, Don't care lost package 
+
+- Http/Https
+
+- Internet protocol (IP)
+    - TCP
+        - Telnet
+        - FTP
+        - HTTP
+        - SMTP
+    - UDP
+        - DNS
+        - NFS
+        - Voice over IP
+    - ICMP
+

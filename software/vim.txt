@@ -1,0 +1,192 @@
+===============================================================================
+=[vim]=
+===============================================================================
+
+________________________________________________________________________________
+=[common]=
+
+	$ % : to match bracket
+
+	$ p : paste
+
+	$ ctrl + g : info file
+
+________________________________________________________________________________
+=[mode]=
+
+	$ ctrl + c | esc | jj : command mode
+
+	$ v : visual mode
+
+	$ ctrl + v : rectangular mode
+
+	$ shift + r : replace mode
+
+	$ ctrl + o : listen one command
+
+________________________________________________________________________________
+=[multiple edit]=
+
+	1. rectangular mode
+	2. select
+	3. action
+		- shift + i		:	add text
+		- shift + a		:	add text to next
+		- x				:	deletee
+		- p				:	paste
+		- c				:	change
+		- shift + c		:	change to end line
+		- shift + r		:	change whole line
+	4. off insert mode
+
+________________________________________________________________________________
+=[help]=
+	:h
+
+________________________________________________________________________________
+=[move]=
+
+	$ [count][move]
+
+------
+	$ ctrl + u : page up
+
+	$ ctrl + d : page down
+
+	$ ctrl + o : back position
+
+	:[num line] : to line
+
+------
+	$ 0 : to begin line 
+
+	$ $ : to end line 
+
+	$ shift + a : to end line | insert
+
+------
+	$ w : to begin next word
+
+	$ e : to end word
+
+	$ a : to next character | insert
+
+------
+	$ o : add new line below | insert
+
+	$ shift + o : add new line above | insert
+
+________________________________________________________________________________
+=[delete]=
+
+	$ d : delete select 
+
+	$ d[count][motion]
+
+	$ dd : delte line 
+
+	$ x : delete character
+	$ s : delete character | insert
+
+
+________________________________________________________________________________
+=[change]=
+
+	$ c : delete select
+
+	$ c[count][motion]
+
+	$ r[character] : replace character
+
+________________________________________________________________________________
+=[copy/paste]=
+
+	$ y : copy select
+
+	$ yy : copy line 
+
+	$ y[count][motion]
+
+
+________________________________________________________________________________
+=[undo/redo]=
+
+	$ u : undo 
+
+	$ ctrl + r : redo
+
+________________________________________________________________________________
+=[search]=
+
+	:/[word] : search
+
+	- [word]\c : without upper case
+
+	$ n : next search
+
+	$ shift + n : previous search
+
+	:set hls : highlight search
+	:nohls : no highlight search
+
+	:set ic : search ignore case 
+	:set noic : search without ignore case 
+
+
+	:%s/[content]/[replace]/gc : search and replace
+	:%s//[replace]/gc : replace current search highlight
+
+________________________________________________________________________________
+=[search project]=
+
+	:vimgrep /[content]/gj `git ls-files` | cw
+	:vim /[content]/gj 
+
+	- g : multiple word in line
+	- j : not jump to first match
+	- `git ls-files` : ignore gitignore
+	- cw : show menu
+
+________________________________________________________________________________
+=[netrw]=
+
+	:E : open netrw
+	:Rex : close netrw | :bd
+
+	:r : change sort
+
+	:R : move or rename file
+
+	:d : create directory
+
+________________________________________________________________________________
+=[shell]=
+
+	:![command] : excute 1 command
+
+	:sh : open shell
+
+________________________________________________________________________________
+=[window]=
+
+	:vert : open window in vertical
+	:hor : open window in horization 
+
+	:res [size] : resize height
+	:vert res [size] : resize width
+
+	
+	$ ctrl + w + w : switch windows
+
+________________________________________________________________________________
+=[buffer]=
+
+	:ls : list buffers
+	:b[num] : open buffer
+
+	:e# : previous buffer 
+	$ ctrl + 6 : previous buffer
+
+	:bd : delete buffer
+
+	

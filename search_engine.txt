@@ -1,0 +1,36 @@
+
+===============================================================================
+=[search engine]=
+===============================================================================
+
+____________________________
+=[duckduckgo]
+
+- https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax
+- https://duckduckgo.com/bangs
+
+# operators
+
+- "[content]" : exact content
+
+- [content] filetype:[type] : search file
+    + type : pdf, doc(x), xls(x), ppt(x), html 
+
+- [key] site:[domain] : search from domain 
+
+- [key] -site:[domain] : search without domain 
+
+- intitle:[content] : title include content
+
+- inurl:[content] : url include content
+
+# directly
+
+- \[content] : go to directly first result
+
+- ![bang] [content] : directly to bang search 
+
+# instant answers
+
+- [instant] [content] : add instant to result
+    + instant : images, map, news

@@ -1,0 +1,56 @@
+===============================================================================
+=[git]=
+===============================================================================
+
+# version control 
+- git 
+- mercurial : https://www.mercurial-scm.org
+
+# git
+
+___________________________
+=[command]=
+
+> init 
+
+> clone [repo] [folder]
+  -b [branch]
+
+> config [label] [value]
+  --global 
+
+> remote add [remote] [link]
+
+> branch [branch] 
+  -d [branch]
+  --all
+  
+> checkout [remote/branch]
+
+> add [files]
+
+> commit 
+  -m [mess]
+
+> status 
+
+> log [branch] 
+  --all 
+  --graph
+
+> push [remote] [branch] 
+  --set-upstream
+  --delete
+
+> pull [remote] [branch]
+
+> merge [branch2] [branch1]
+
+> git fetch
+  --all
+
+____________________________
+# fast zsh in large project 
+
+git config --add oh-my-zsh.hide-status 1
+git config --add oh-my-zsh.hide-dirty 1

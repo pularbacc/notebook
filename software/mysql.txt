@@ -1,0 +1,13 @@
+
+____________________________________
+# install
+
+$ brew install mysql
+
+$ brew services start mysql
+
+____________________________________
+# create user
+> CREATE USER 'gz'@'localhost' IDENTIFIED BY '1001010101';
+> GRANT ALL PRIVILEGES ON *.* TO 'gz'@'localhost' WITH GRANT OPTION;
+> FLUSH PRIVILEGES;

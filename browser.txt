@@ -1,0 +1,14 @@
+===============================================================================
+=[browser]=
+===============================================================================
+
+_______________
+=[firefox]=
+
+# page default 
+
+- about:preferences
+- about:config
+- about:support
+- about:addons
+- about:home#asrouter | AS Router Admin

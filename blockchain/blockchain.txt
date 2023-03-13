@@ -1,0 +1,49 @@
+===============================================================================
+=[block chain]=
+===============================================================================
+
+_______________________________________________________________________________
+# glossary
+
+- chain : chuỗi 
+
+- signatures : chữ ký
+
+- Proof-of-work : Bằng chứng làm việc 
+
+- Mining rewards : Phần thưởng khai thác
+
+- Transactions : Giao dịch 
+
+- Signing transaction : Chữ ký giao dịch
+
+- Miner : Người giám sát giao dịch 
+
+- Ledger : Sỗ cái 
+_______________________________________________________________________________
+
+    _____
+    Block
+
+    [
+        - hash
+        - previous hash
+        - timestamp
+        - data
+    ]
+
+    __________
+    Blockchain 
+
+    [block]->[block]->[block]
+
+
+_______________________________________________________________________________
+- Block Chain
+	-> Hệ thống lưu trữ dữ liệu 
+
+- Sổ cái 
+	-> Lưu lại các giao dịch 
+
+- Block - Bản ghi
+	[block 1]-[block 2]-[block 3]

@@ -1,0 +1,152 @@
+===============================================================================
+=[Tool]=
+===============================================================================
+
+
+_______________________________________________________________________________
+=[note]=
+
+# create command 
+- when type command , computer will file command in list folder bin
+$ echo $PATH : see list folder bin
+$ export PATH="[path to folder bin]:$PATH" : link folder to excute | add to .zshrc or .bashrc
+
+
+_______________________________________________________________________________
+# Common
+
+_________
+[network]
+    - traceroute [link] : tracking route
+
+    - dig [domain] : domain lookup
+
+    - curl [link] : http call
+
+    - wget -m [link] : crawl full web
+
+    - whois [link] : info page
+
+    - curl icanhazip.com : check my ip
+______
+[nmap]
+________
+[vscode]
+$ code-server serve-local 
+
+_____________
+[http server]
+- https://github.com/http-party/http-server
+$ http-server
+
+__________
+[terminal]
+- ctrl + p : old command 
+- ctrl + n : new command
+
+________
+[iterm2]
+- https://iterm2.com
+
+_________
+[mapscii] 
+- https://github.com/rastapasta/mapscii
+
+_________
+[firefox]
+
+- Config : about:config
+- Support : about:support
+
+______
+[brew]
+
+$ brew services list : services 
+$ brew services start/stop [name] : start/stop services
+$ brew list : list install
+
+_____
+[npm]
+
+$ npm list -g : list global
+
+_________________
+[translate shell]
+- https://github.com/soimort/translate-shell
+
+____
+[du] : file size
+$ du -h : display format 
+$ du file-name : chose special file
+$ du -s */ : folder in folder
+$ du -a : all file and folder
+$ du -sh [name] : size file/folder
+
+________
+[locate]
+$ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+$ sudo /usr/libexec/locate.updatedb
+$ locate [name]
+
+______
+[grep]
+$ grep -rin [word] --exclude-dir={[ignore1],[ignore2]} : search, highlight, line number
+    
+_____________
+[virtual box]
+$ VBoxManage startvm [name] --type headless : start virtual
+$ VBoxManage controlvm [name] poweroff : off virtual
+
+
+________
+[docker]
+$ docker run : create a new container of an image, and execute the container
+$ docker start [id] : run container
+$ docker attach [id] : attach container
+$ docker build -t [name] . : build image
+$ docker run -dp [port run]:[port virtual] [name] : start container
+$ docker run -ti [image] : run in terminal
+$ docker images : list images
+$ docker ps : list container running
+$ docker ps -a : list all container
+$ docker stop [id container] : stop container
+$ docker rm [id container] : remove container
+
+
+_______
+[wikit] : wikipedia on temrinal
+- https://github.com/koryschneider/wikit
+
+________
+[httpie]
+- https://httpie.io
+
+____
+[ls]
+
+- ls | sort --version-sort : sort by name human read
+
+______
+[lsof]
+$ lsof -i -P | grep -i "listen" : list port open
+
+____
+[ps]
+$ ps -ax : list all process
+
+________________
+[theme terminal]
+- https://ohmyz.sh
+- https://github.com/ohmyzsh/ohmyzsh
+- https://github.com/romkatv/powerlevel10k
+
+________
+[imgcat]
+- https://github.com/wookayin/python-imgcat
+$ imgcat [file]
+
+______
+[yank] : copy to clipboard
+- https://github.com/mptre/yank
+$ [command] | yank
+$ [command] | yank -l

@@ -1,0 +1,25 @@
+
+# Media Wiki
+-> Open source for all project of wiki projects
+
+- https://www.mediawiki.org/wiki/MediaWiki
+
+_________
+# install
+- git clone --depth 1 https://gerrit.wikimedia.org/r/mediawiki/core.git
+
+_____________
+# git version
+- https://github.com/wikimedia/mediawiki
+
+_________
+# require
+
+$ brew install composer
+
+brew install php@7.2
+
+# apache
+
+
+

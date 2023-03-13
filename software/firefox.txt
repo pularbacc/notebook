@@ -1,0 +1,41 @@
+
+_________
+# firefox
+- https://firefox-source-docs.mozilla.org
+
+_____________
+# link source
+- https://hg.mozilla.org
+- https://github.com/mozilla/gecko-dev  | similar mozilla-central
+
+_________
+# version
+- mozilla-central : dev branch
+- mozilla-unified : all branch
+
+_______________
+# INSTALL
+
+## using hg
+$ curl https://hg.mozilla.org/mozilla-central/raw-file/default/python/mozboot/bin/bootstrap.py -O
+$ python3 bootstrap.py
+
+## using git
+$ git clone https://github.com/mozilla/gecko-dev
+$ ./match bootstrap
+$ ./mach configure
+
+_________________
+# BUILD
+$ ./mach build | ./mach build faster
+$ ./mach run
+
+-> out: ~/.mozbuild , ./obj-x86_64-apple-darwin22.3.0
+
+________________________
+$ hg clone https://hg.mozilla.org/mozilla-central
+
+______________________________________________________________________________
+# search suggestion 
+-> file config search engine : search.json.mozlz4
+- this file also config auto suggestion search 

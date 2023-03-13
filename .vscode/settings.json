@@ -1,0 +1,16 @@
+{
+	"[plaintext]": {
+		"editor.autoClosingBrackets": "never",
+		"editor.guides.indentation": false,
+		"editor.tabSize": 4,
+		"editor.insertSpaces": true,
+	},
+	"[markdown]": {
+		"editor.wordWrap": "off"
+	},
+	"editor.quickSuggestions": {
+		"other": "off",
+		"comments": false,
+		"strings": false
+	}
+}

@@ -1,0 +1,104 @@
+===============================================================================
+=[cryptography]=
+===============================================================================
+
+
+_______________________________________________________________________________
+=[note]=
+
+- Cryptography
+
+- do
+	+ Encryption
+	+ Decryption
+
+- type
+	+ Symmetric Key Cryptography - Đối xứng
+		- same key for encrypt and decrypt
+		> AES, DES, 3DES, Twofish
+
+	+ Asymmetric Key Cryptography - Không đối xứng
+		- different ket for encrypt and decrypt
+		> RSA
+		- Ciphers
+			+ stream
+			+ block
+
+_______________________________________________________________________________
+=[encryption]=
+
+- can revert
+
+
+
+_______________________________________________________________________________
+=[hash]=
+
+- Xáo trộn 
+- can't revert
+
+f(mess) = hash
+
+# useage: 
+- to check value
+check value a is correct if f(a) 
+
+- storage password
+then to check input is correct password
+
+_______________________________________________________________________________
+=[althogrithm]
+
+Math:
+	- Mod : Chia lấy dư
+
+Basic: 
+	plaintext - original message
+	ciphertext - coded message
+
+	cipher - algorithm for transforming plaintext to ciphertext
+
+	key - info used in cipher known only to sender/receiver
+
+	encipher (encrypt) - converting plaintext to ciphertext
+	decipher (decrypt) - recovering ciphertext from plaintext
+	
+Cipher:
+	P -> plaintext
+	C -> cliphertext
+	E -> Encrypt
+	D -> Decrypt
+
+	-------------- slide 3
+
+	+ additive - shift - Caesar
+		- E: C = (P + K) mod 26
+
+		- D: P = (C - K) mod 26
+
+	+ affine 
+		- E: T = (P * K1) mod 26
+		- E: C = (T + K2) mod 26
+
+		- D: T = (C - K2) mod 26
+		- D: P = (T * K^-1) mod 26
+	
+	+ autokey
+		- P = P1|P2|P3|...
+		- C = C1|C2|C3|...
+		- K = {K1, P1, P2, ...}
+
+		- E: Ci = (Pi + Ki) mod 26
+
+		- D: Pi = (Ci - Ki) mod 26
+	
+	+ playfair
+
+	+ vigenere
+		- P = P1|P2|P3|...
+		- C = C1|C2|C3|...
+		- K = {K1, K2, ..., Kn},...{K1, K2, ..., Kn}
+
+		- E: Ci = (Pi + Ki) mod 26
+
+		- D: Pi = (Ci - Ki) mod 26

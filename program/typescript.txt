@@ -1,0 +1,9 @@
+
+# install
+$ npm i typescript --save-dev
+
+# init
+$ npx tsc --init
+
+# build
+$ npx tsc

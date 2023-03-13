@@ -1,0 +1,43 @@
+===============================================================================
+=[hyperledger]=
+===============================================================================
+
+_______________________________________________________________________________
+=[Step]=
+
+_________
+# require
+- brew
+- git
+- cURL
+- docker
+- go
+- jq
+
+________
+# set up
+- get install script
+$ curl -sSLO https://raw.githubusercontent.com/hyperledger/fabric/main/scripts/install-fabric.sh && chmod +x install-fabric.sh
+
+- run install 
+$ ./install-fabric.sh d s
+
+- create binary 
+$ ./install-fabric.sh binary
+
+_____
+# run 
+- launch the blockchain network
+$ cd fabric-samples/test-network
+$ ./network.sh up createChannel -c mychannel -ca
+
+- Deploy the smart contract
+$ ./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-typescript -ccl typescript
+
+- run application
+$ cd asset-transfer-basic/application-gateway-typescript
+$ npm install
+$ npm start
+
+- close 
+$ ./network.sh down

@@ -1,0 +1,68 @@
+===============================================================================
+=[security]=
+===============================================================================
+
+_______________________________________________________________________________
+# Note
+
+    - Code
+    - Network
+    - System administration
+    - Operating System
+    - Virtual machines
+    - Cloud
+    - Blockchain
+    - IoT
+    - Firewalls
+
+_______________________________________________________________________________
+# Action
+    - Ethical Hacking
+    - Find vulnerabilities
+    - penetration testing
+    - Attack
+
+
+_______________________________________________________________________________
+# CIA triad
+    - Integrity
+    - Confidentiality
+    - Availability
+
+_______________________________________________________________________________
+# attacks
+    - Malware
+    - Trojans
+    - Phishing
+    - Man in the middle (MitM)
+    - Denial of Service (DoS)
+    - SQL Injection
+    - Zero day exploit
+    - DNS tunneling    
+
+_______________________________________________________________________________
+# testing : Find vulnerabilities - Web exploitation
+    - Reconnaissance
+    - Scanning
+    - Gain access
+    - Maintain access
+    - Clear tracks
+    - Reporting
+
+_______________________________________________________________________________
+# area
+    - Client
+    - Web
+    - Server
+    - Network
+    - Wireless
+    - Social Engineering
+    - Data
+    - App
+    - Cloud
+    - Identity
+
+_______________________________________________________________________________
+=[special character input]=
+
+- URL Encode

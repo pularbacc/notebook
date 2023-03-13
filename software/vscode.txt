@@ -1,0 +1,36 @@
+
+_________
+# Vscode 
+
+./scripts/code.sh : desktop
+./scripts/code-web.sh : only front end
+./scripts/code-server.sh : fe and be
+
+--------------> using node 16.14.2 <-----------------------
+
+$ yarn 
+$ yarn watch
+$ ./scripts/code.sh
+
+
+_______________________
+# install vscode server - old version - it solving
+
+- https://code.visualstudio.com/blogs/2022/07/07/vscode-server
+
+$ wget -O- https://aka.ms/install-vscode-server/setup.sh | sh
+
+______________________
+# build
+
+- list build available
+$ yarn run gulp --tasks
+
+- build vscode desktop
+$ yarn gulp vscode-darwin-x64
+
+- build vscode web
+$ yarn gulp vscode-web
+
+- build vscode web & server
+$ yarn gulp vscode-reh-web-darwin-x64

@@ -1,0 +1,23 @@
+_______________________________________________________________________________
+# Networking models
+
+-> Networking models -> protocols , standards of network (Rule)
+-> today network run on TCP/IP models
+
+_______________________________________________________________________________
+# TCP/IP model
+    - Application
+    - transport
+    - internet
+    - link
+
+
+_______________________________________________________________________________
+# OSI model
+    - Application
+    - Presentation
+    - Session
+    - Transport
+    - Network
+    - Data_Link
+    - Physical

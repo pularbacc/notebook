@@ -1,0 +1,152 @@
+===============================================================================
+=[bash]=
+===============================================================================
+
+- check version
+$ which $SHELL
+
+- permission fole
+$ chmod +x [file]
+
+- tell is bash file
+#!/bin/bash
+
+______
+# value
+
+- val and = not have space 
+- declare 
+
+- print content 
+[
+    name="nguyen cong"
+    echo "hello $name"
+
+    echo "how old are you?"
+    read old
+    echo "your age is $old"
+]
+
+______
+# argument
+
+[
+    name=$1
+    age=$2
+]
+
+-> run: ./run.sh nguyen 20
+
+________
+# get output command
+
+[
+    listFile=$(ls -a)
+    echo $listFile
+]
+
+_______
+# array
+
+[
+    arr=("b c" a  d ef)
+
+    echo ${arr[0]}      # access an element
+
+    echo ${arr[*]}      # print all arr
+    echo ${arr[@]}      # print all arr
+
+    unset arr[1]        # delete element
+    unset arr           # delete all arr
+
+    arr+=("Kali")       # add element
+
+    echo "${#arr[@]}"   # length arr
+
+    arr[0]="haha"       # change elm
+]
+
+________
+# string
+
+[
+    name="nguyen"
+
+    name+=" cong"       # append string
+    name=name" cong"    # append string
+    echo ${#name}       # length string
+]
+
+_______________________
+# arithmetic operations 
+
+[
+    a=5
+
+    (( a = a * 5 )) 
+
+    echo $a
+]
+_____
+# for
+
+[
+    for i in {0..3}
+    do
+        echo "Number: $i"
+    done
+
+    for i in ${arr[@]}
+    do
+        echo "$i"
+    done
+]
+
+__________
+# function
+
+[
+    say () {
+        echo "Hello " $1
+    }
+    say "nguyen"
+
+]
+___________
+# operators
+
+-eq # Equal
+-ne # Not equal
+-lt # Less than
+-le # Less than or equal
+-gt # Greater than
+-ge # Greater than or equal
+
+___________
+# condition
+
+[
+    if [ $age == 22 ]; then 
+        echo "Your age correct"
+    else 
+        echo "Your age not correct"
+    fi
+]
+
+________
+# case 
+[
+    echo "Enter val :"
+
+    read a
+
+    case $a in
+        1)
+            echo "enter 1"
+        ;;
+
+        2)
+            echo "enter 2"
+        ;;
+    esac
+]

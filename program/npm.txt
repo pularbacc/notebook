@@ -1,0 +1,4 @@
+
+# npx
+-> run command from local or remote package
+$ npx [command]

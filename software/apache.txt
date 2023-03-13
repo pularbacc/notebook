@@ -1,0 +1,11 @@
+_________________________________________
+# install
+
+$ brew install httpd
+
+$ brew services start httpd
+
+_________________________________________
+# config
+
+- /usr/local/etc/httpd/httpd.conf

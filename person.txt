@@ -1,0 +1,10 @@
+
+===============================================================================
+=[person]=
+===============================================================================
+
+- Pablos Holman | Hacker
+
+- Edward Snowden | American whistleblower
+
+- Erich Gamma | vscode dev : https://github.com/egamma

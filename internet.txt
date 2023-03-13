@@ -1,0 +1,7 @@
+this is internet note 
+
+platform 
+    - open  --> they note make an app 
+    - close --> they make an app
+        + chat
+        + 
